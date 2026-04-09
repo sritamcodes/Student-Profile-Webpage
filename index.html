@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Profile</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="glass">
+    <h1>Student Profile</h1>
+    <h2 id="studentName">Sritam Kumar Routray</h2>
+
+    <div class="controls">
+        <button id="greetBtn"> Greet Me</button>
+        <button id="toggleMode">Toggle Mode</button>
+    </div>
+</header>
+
+<main>
+
+<section class="card">
+    <h3>About Me</h3>
+    <p>
+        I am Sritam Kumar Routray, a passionate student focused on technology,
+        UI/UX design, and software development. I enjoy building modern,
+        interactive digital experiences.
+    </p>
+</section>
+
+<section class="card">
+    <h3>Subjects</h3>
+<ul id="subjectList">
+    <li>Digital Logic</li>
+    <li>Computer Fundamental</li>
+    <li>Programming Using C</li>
+    <li>Python Programming</li>
+    <li>Environmental Studies (EVS)</li>
+    <li>Hindi</li>
+</ul>
+    <input type="text" id="newSubject" placeholder="Add subject">
+    <button id="addSubject">Add</button>
+</section>
+
+<section class="card">
+    <h3>Goals</h3>
+    <ol class="goals">
+    <li>Build strong foundations in Python, Data Structures, and Machine Learning</li>
+    <li>Master Generative AI concepts including LLMs, transformers, and prompt engineering</li>
+    <li>Develop real-world AI applications such as chatbots, recommendation systems, and automation tools</li>
+    <li>Contribute to open-source AI projects and collaborate with global developer communities</li>
+    <li>Gain expertise in AI tools like TensorFlow, PyTorch, and Hugging Face</li>
+    <li>Stay updated with latest AI research and advancements in Generative AI</li>
+</ol>
+</section>
+
+<section class="card center">
+    <h3>Profile Image</h3>
+    <img src="./assets/image.png" alt="Profile Image">
+</section>
+<section class="card">
+    <h3>Marks</h3>
+
+    <table id="marksTable">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Marks</th>
+                <th>%</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>Digital Logic</td><td>63</td><td class="percent"></td></tr>
+            <tr><td>Computer Fundamental</td><td>72</td><td class="percent"></td></tr>
+            <tr><td>Programming Using C</td><td>59</td><td class="percent"></td></tr>
+            <tr><td>Python Programming</td><td>92</td><td class="percent"></td></tr>
+            <tr><td>EVS</td><td>75</td><td class="percent"></td></tr>
+            <tr><td>Hindi</td><td>80</td><td class="percent"></td></tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th id="totalMarks"></th>
+                <th id="avgPercent"></th>
+            </tr>
+        </tfoot>
+    </table>
+
+</section>
+    <p id="average"></p>
+</section>
+
+<section class="card">
+    <h3>Favorite Website</h3>
+    <a href="https://huggingface.co/" target="_blank" class="btn-link">
+        Visit Hugging Face
+    </a>
+</section>
+
+<section class="card">
+    <h3>Contact Me</h3>
+    <form id="contactForm">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="class" placeholder="Class">
+        <textarea id="message" placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+</main>
+<div id="popup" class="popup hidden">
+    <p id="popupText"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
